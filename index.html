@@ -18,29 +18,60 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav align-items-center">
+                <ul class="navbar-nav align-items-center gap-2">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <span class="btn btn-success">
-                                Create a new post
-                            </span>
-                        </a>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">
+                            Create a new post
+                          </button>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="btn btn-secondary dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                          </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label class="form-label" for="caption">Caption:</label>
+          <textarea class="form-control" name="caption" id="caption" cols="30" rows="10" placeholder="Add the caption of your post here"></textarea>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa-solid fa-camera"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </li>
+          </ul>    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <ul class="nav nav-tabs justify-content-center">
         <li class="nav-item">
             <a class="nav-link" href="#">
@@ -53,13 +84,52 @@
             </a>
         </li>
     </ul>
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-center gap-2">
         <div class="card mt-2 p-2" style="width: 30rem">
             <div class="d-flex justify-content-between">
                 <h5>My beautiful dog</h5>
                 <p>10/20</p>
             </div>
-            <img src="" alt="Hermoso pastor Aleman" class="card-img">
+            <img src="./img/dogs.jpg" alt="Hermoso pastor Aleman" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-title">
+                    200 Likes
+                </h6>
+                <p class="card-text">This is an example ofa very good photo that you can post on instagram</p>
+            </div>
+        </div>
+        <div class="card mt-2 p-2" style="width: 30rem">
+            <div class="d-flex justify-content-between">
+                <h5>A beautiful sky</h5>
+                <p>05/20</p>
+            </div>
+            <img src="./img/stars.jpg" alt="Hermoso pastor Aleman" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-title">
+                    200 Likes
+                </h6>
+                <p class="card-text">This is an example ofa very good photo that you can post on instagram</p>
+            </div>
+        </div>
+        <div class="card mt-2 p-2" style="width: 30rem">
+            <div class="d-flex justify-content-between">
+                <h5>Scubba</h5>
+                <p>15/20</p>
+            </div>
+            <img src="./img/underthesea.jpg" alt="Hermoso pastor Aleman" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-title">
+                    200 Likes
+                </h6>
+                <p class="card-text">This is an example ofa very good photo that you can post on instagram</p>
+            </div>
+        </div>
+        <div class="card mt-2 p-2" style="width: 30rem">
+            <div class="d-flex justify-content-between">
+                <h5>Scubba</h5>
+                <p>15/20</p>
+            </div>
+            <img src="./img/underthesea.jpg" alt="Hermoso pastor Aleman" class="card-img-top">
             <div class="card-body">
                 <h6 class="card-title">
                     200 Likes
